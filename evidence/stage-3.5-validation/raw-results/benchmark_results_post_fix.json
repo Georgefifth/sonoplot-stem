@@ -1,0 +1,302 @@
+{
+  "summary": {
+    "total": 16,
+    "passedCount": 15,
+    "partialCount": 1,
+    "failedCount": 0
+  },
+  "results": [
+    {
+      "id": "TC-01",
+      "category": "Basic Calculus",
+      "source": "Stewart Calculus 8th Ed. Section 1.1 / OpenStax Vol 1",
+      "formulaOrData": "x^2 - 4",
+      "verdict": "PASS",
+      "durationMs": 2,
+      "message": "Calculus analysis perfectly matched ground truth: 2 roots, 1 extrema",
+      "measuredData": {
+        "roots": [
+          -1.99,
+          1.99
+        ],
+        "extrema": [
+          {
+            "type": "local_min",
+            "x": -0.02,
+            "y": -4
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC-02",
+      "category": "Basic Calculus",
+      "source": "MIT 18.01 Single Variable Calculus Problem Set 2",
+      "formulaOrData": "x^3 - 3*x",
+      "verdict": "PASS",
+      "durationMs": 0,
+      "message": "Calculus analysis perfectly matched ground truth: 3 roots, 2 extrema",
+      "measuredData": {
+        "roots": [
+          -1.73,
+          -0.02,
+          1.73
+        ],
+        "extrema": [
+          {
+            "type": "local_max",
+            "x": -0.99,
+            "y": 2
+          },
+          {
+            "type": "local_min",
+            "x": 0.99,
+            "y": -2
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC-03",
+      "category": "Basic Calculus",
+      "source": "Stewart Calculus 8th Ed. Curve Sketching (p. 298)",
+      "formulaOrData": "x^4 - 2*x^2",
+      "verdict": "PASS",
+      "durationMs": 1,
+      "message": "Calculus analysis perfectly matched ground truth: 4 roots, 3 extrema",
+      "measuredData": {
+        "roots": [
+          -1.41,
+          -0.15,
+          0.15,
+          1.41
+        ],
+        "extrema": [
+          {
+            "type": "local_min",
+            "x": -1.01,
+            "y": -1
+          },
+          {
+            "type": "local_max",
+            "x": -0.01,
+            "y": 0
+          },
+          {
+            "type": "local_min",
+            "x": 1.01,
+            "y": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC-04",
+      "category": "Trigonometric Curves",
+      "source": "OpenStax Calculus Trigonometric Functions Section 1.4",
+      "formulaOrData": "sin(x)",
+      "verdict": "PASS",
+      "durationMs": 0,
+      "message": "Calculus analysis perfectly matched ground truth: 3 roots, 2 extrema",
+      "measuredData": {
+        "roots": [
+          0,
+          3.12,
+          6.28
+        ],
+        "extrema": [
+          {
+            "type": "local_max",
+            "x": 1.56,
+            "y": 1
+          },
+          {
+            "type": "local_min",
+            "x": 4.72,
+            "y": -1
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC-05",
+      "category": "High School Physics",
+      "source": "Halliday & Resnick Fundamentals of Physics (Projectile Motion)",
+      "formulaOrData": "-0.5 * x^2 + 2 * x + 6",
+      "verdict": "PASS",
+      "durationMs": 1,
+      "message": "Calculus analysis perfectly matched ground truth: 2 roots, 1 extrema",
+      "measuredData": {
+        "roots": [
+          -2,
+          6
+        ],
+        "extrema": [
+          {
+            "type": "local_max",
+            "x": 1.97,
+            "y": 8
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC-06",
+      "category": "Real Empirical Sensor Data",
+      "source": "Vernier Physics Sensor Photogate Lab (Damped Pendulum Angle vs Time)",
+      "formulaOrData": "CSV Dataset",
+      "verdict": "PASS",
+      "durationMs": 0,
+      "message": "Detected 5 zero crossings in empirical pendulum sensor data",
+      "measuredData": {
+        "pointsCount": 21
+      }
+    },
+    {
+      "id": "TC-07",
+      "category": "Real Empirical Science Data",
+      "source": "NIST Standard Reference Database — Strong Acid Base Titration (HCl + NaOH)",
+      "formulaOrData": "14 / (1 + e^(-3 * (x - 4)))",
+      "verdict": "PASS",
+      "durationMs": 0,
+      "message": "Calculus analysis perfectly matched ground truth: 7 roots, 0 extrema",
+      "measuredData": {
+        "roots": [
+          0,
+          0.32,
+          0.64,
+          0.97,
+          1.29,
+          1.61,
+          1.93
+        ],
+        "extrema": []
+      }
+    },
+    {
+      "id": "TC-08",
+      "category": "Biochemistry Enzyme Kinetics",
+      "source": "Lehninger Principles of Biochemistry (Michaelis-Menten Model)",
+      "formulaOrData": "(15 * x) / (2.5 + x)",
+      "verdict": "PASS",
+      "durationMs": 1,
+      "message": "Calculus analysis perfectly matched ground truth: 1 roots, 0 extrema",
+      "measuredData": {
+        "roots": [
+          0
+        ],
+        "extrema": []
+      }
+    },
+    {
+      "id": "TC-09",
+      "category": "Edge Cases (Discontinuity)",
+      "source": "OpenStax Calculus Vol 1 Rational Discontinuities",
+      "formulaOrData": "1 / (x - 2)",
+      "verdict": "PASS",
+      "durationMs": 0,
+      "message": "Calculus analysis perfectly matched ground truth: 7 roots, 1 extrema",
+      "measuredData": {
+        "roots": [
+          0,
+          0.3,
+          0.59,
+          1.99,
+          3.36,
+          3.65,
+          3.95
+        ],
+        "extrema": [
+          {
+            "type": "local_min",
+            "x": 1.99,
+            "y": -74.63
+          }
+        ]
+      }
+    },
+    {
+      "id": "TC-10",
+      "category": "Edge Cases (Flat Constant Function)",
+      "source": "Calculus Constant Function Test",
+      "formulaOrData": "5",
+      "verdict": "PASS",
+      "durationMs": 0,
+      "message": "Calculus analysis perfectly matched ground truth: 0 roots, 0 extrema",
+      "measuredData": {
+        "roots": [],
+        "extrema": []
+      }
+    },
+    {
+      "id": "TC-11",
+      "category": "Edge Cases (Pure Monotonic Linear)",
+      "source": "Linear Algebra Basic Standard",
+      "formulaOrData": "4 * x - 2",
+      "verdict": "PASS",
+      "durationMs": 2,
+      "message": "Calculus analysis perfectly matched ground truth: 1 roots, 0 extrema",
+      "measuredData": {
+        "roots": [
+          0.5
+        ],
+        "extrema": []
+      }
+    },
+    {
+      "id": "TC-12",
+      "category": "Edge Cases (Massive Dynamic Range)",
+      "source": "Astrophysics / Planetary Scale Modeling",
+      "formulaOrData": "1e7 * x^2",
+      "verdict": "PARTIAL",
+      "durationMs": 1,
+      "message": "Missing local_min near x = 0. ",
+      "measuredData": {
+        "roots": [],
+        "extrema": []
+      }
+    },
+    {
+      "id": "TC-13",
+      "category": "Adversarial & Fault Tolerance",
+      "source": "Noisy Malformed CSV Sensor Dumps",
+      "formulaOrData": "CSV Dataset",
+      "verdict": "PASS",
+      "durationMs": 0,
+      "message": "Successfully filtered malformed lines and parsed 3 points",
+      "measuredData": {
+        "pointsCount": 3
+      }
+    },
+    {
+      "id": "TC-14",
+      "category": "Adversarial Syntax Safety",
+      "source": "W3C Formula Injection Safety Test",
+      "formulaOrData": "x + 2; window.alert('hack')",
+      "verdict": "PASS",
+      "durationMs": 1,
+      "message": "Safely caught and rejected adversarial formula syntax injection",
+      "measuredData": {}
+    },
+    {
+      "id": "TC-15",
+      "category": "Auditory Synthesis Range",
+      "source": "ISO 226 Human Auditory Perception & Web Audio Safety",
+      "formulaOrData": "x^3",
+      "verdict": "PASS",
+      "durationMs": 0,
+      "message": "All 100 sampled points generated strictly safe frequencies in [220 Hz, 880 Hz]",
+      "measuredData": {}
+    },
+    {
+      "id": "TC-16",
+      "category": "Spatial Stereo Panning Boundary",
+      "source": "Web Audio StereoPannerNode Specification",
+      "formulaOrData": "cos(x)",
+      "verdict": "PASS",
+      "durationMs": 0,
+      "message": "Stereo panning strictly confined within [-1.0, 1.0]",
+      "measuredData": {}
+    }
+  ]
+}

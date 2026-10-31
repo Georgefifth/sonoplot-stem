@@ -164,18 +164,34 @@ export function analyzeCurve(
   }
 
   // Detect roots and extrema
+  const ySpan = Math.max(1, yMax - yMin);
+  const rootEpsilon = Math.max(0.04, 0.005 * ySpan);
+
   for (let i = 0; i < points.length; i++) {
     const curr = points[i];
     if (isNaN(curr.y) || curr.isDiscontinuity) continue;
 
-    // Root detection (zero crossing or very close to 0)
-    if (i < points.length - 1) {
+    // Direct root detection (point is within epsilon of zero)
+    if (Math.abs(curr.y) <= rootEpsilon) {
+      curr.isRoot = true;
+      if (!roots.some(r => Math.abs(r.x - curr.x) < 0.28)) {
+        roots.push(curr);
+        criticalPoints.push({
+          type: 'root',
+          x: curr.x,
+          y: curr.y,
+          description: `Zero crossing / root at x = ${curr.x.toFixed(2)}`
+        });
+      }
+    }
+    // Sign crossing root detection between adjacent points
+    else if (i < points.length - 1) {
       const next = points[i + 1];
       if (!isNaN(next.y) && !next.isDiscontinuity) {
-        if ((curr.y <= 0 && next.y >= 0) || (curr.y >= 0 && next.y <= 0)) {
+        if ((curr.y < 0 && next.y > 0) || (curr.y > 0 && next.y < 0)) {
           const rootPoint = Math.abs(curr.y) < Math.abs(next.y) ? curr : next;
           rootPoint.isRoot = true;
-          if (!roots.some(r => Math.abs(r.x - rootPoint.x) < 0.25)) {
+          if (!roots.some(r => Math.abs(r.x - rootPoint.x) < 0.28)) {
             roots.push(rootPoint);
             criticalPoints.push({
               type: 'root',
@@ -197,10 +213,10 @@ export function analyzeCurve(
 
       const validNeighbors = !isNaN(pMinus2.y) && !isNaN(pMinus1.y) && !isNaN(pPlus1.y) && !isNaN(pPlus2.y);
       if (validNeighbors) {
-        // Local Maximum (Peak): higher than both sides
-        if (curr.y >= pMinus1.y && curr.y > pMinus2.y && curr.y >= pPlus1.y && curr.y > pPlus2.y) {
+        // Local Maximum (Peak)
+        if (curr.y >= pMinus1.y && curr.y >= pPlus1.y && (curr.y > pMinus2.y || curr.y > pPlus2.y)) {
           curr.isLocalMax = true;
-          if (!extrema.some(e => Math.abs(e.x - curr.x) < 0.4)) {
+          if (!extrema.some(e => Math.abs(e.x - curr.x) < 0.35)) {
             extrema.push(curr);
             criticalPoints.push({
               type: 'local_max',
@@ -210,10 +226,10 @@ export function analyzeCurve(
             });
           }
         }
-        // Local Minimum (Valley): lower than both sides
-        else if (curr.y <= pMinus1.y && curr.y < pMinus2.y && curr.y <= pPlus1.y && curr.y < pPlus2.y) {
+        // Local Minimum (Valley)
+        else if (curr.y <= pMinus1.y && curr.y <= pPlus1.y && (curr.y < pMinus2.y || curr.y < pPlus2.y)) {
           curr.isLocalMin = true;
-          if (!extrema.some(e => Math.abs(e.x - curr.x) < 0.4)) {
+          if (!extrema.some(e => Math.abs(e.x - curr.x) < 0.35)) {
             extrema.push(curr);
             criticalPoints.push({
               type: 'local_min',
