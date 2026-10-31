@@ -1,0 +1,310 @@
+{
+  "base": "https://accessed-hacks.vercel.app",
+  "browser": "firefox",
+  "headed": false,
+  "startedAt": "2026-10-31T11:14:17.619Z",
+  "finishedAt": "2026-10-31T11:14:29.390Z",
+  "summary": {
+    "total": 22,
+    "pass": 22,
+    "fail": 0
+  },
+  "results": [
+    {
+      "viewport": "desktop",
+      "id": "smoke-landing",
+      "title": "Landing page renders with high contrast and valid title",
+      "status": "pass",
+      "ms": 457,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/smoke-landing-initial-loaded-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "core-audio-sweep",
+      "title": "Continuous audio sonification sweep plays and pauses cleanly",
+      "status": "pass",
+      "ms": 632,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/core-audio-sweep-sweep-active-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "keyboard-scrubbing-aria",
+      "title": "Arrow key scrubbing steps through points with live ARIA announcements",
+      "status": "pass",
+      "ms": 290,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/keyboard-scrubbing-aria-scrubbing-active-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "feature-snapping-extrema-roots",
+      "title": "Direct feature jumping snaps accurately to real roots and local peaks",
+      "status": "pass",
+      "ms": 458,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/feature-snapping-extrema-roots-snapped-extrema-desktop.png",
+        "evidence/stage-3-qa/screens/feature-snapping-extrema-roots-snapped-root-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "calculus-structural-report",
+      "title": "Calculus Feature Report displays complete critical points and allows point jumping",
+      "status": "pass",
+      "ms": 423,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/calculus-structural-report-calculus-report-view-desktop.png",
+        "evidence/stage-3-qa/screens/calculus-structural-report-inspected-point-from-report-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "tactile-braille-bana-grid",
+      "title": "BANA Tactile Braille Grid renders, toggles formats, and copies grid",
+      "status": "pass",
+      "ms": 459,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/tactile-braille-bana-grid-tactile-ascii-grid-desktop.png",
+        "evidence/stage-3-qa/screens/tactile-braille-bana-grid-tactile-braille-pins-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "formula-validation-error-recovery",
+      "title": "Syntax error validation warns clearly and allows user recovery without crash",
+      "status": "pass",
+      "ms": 410,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/formula-validation-error-recovery-syntax-error-alert-desktop.png",
+        "evidence/stage-3-qa/screens/formula-validation-error-recovery-recovered-valid-formula-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "science-csv-data-import",
+      "title": "Experimental Science CSV data imports, parses points, and sonifies dataset",
+      "status": "pass",
+      "ms": 368,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/science-csv-data-import-csv-dataset-loaded-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "ear-training-lab-quiz",
+      "title": "Acoustic Ear-Training Lab plays sound, evaluates answer, and tracks score",
+      "status": "pass",
+      "ms": 622,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/ear-training-lab-quiz-quiz-answered-correctly-desktop.png",
+        "evidence/stage-3-qa/screens/ear-training-lab-quiz-quiz-next-question-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "keyboard-shortcuts-modal",
+      "title": "Keyboard Cheatsheet modal opens via ? key and dismisses via Esc",
+      "status": "pass",
+      "ms": 270,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/keyboard-shortcuts-modal-shortcuts-modal-open-desktop.png"
+      ]
+    },
+    {
+      "viewport": "desktop",
+      "id": "mobile-responsiveness-390px",
+      "title": "Mobile layout (390px) scrolls presets horizontally without breaking page grid",
+      "status": "pass",
+      "ms": 250,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/mobile-responsiveness-390px-mobile-ready-desktop.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "smoke-landing",
+      "title": "Landing page renders with high contrast and valid title",
+      "status": "pass",
+      "ms": 370,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/smoke-landing-initial-loaded-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "core-audio-sweep",
+      "title": "Continuous audio sonification sweep plays and pauses cleanly",
+      "status": "pass",
+      "ms": 418,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/core-audio-sweep-sweep-active-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "keyboard-scrubbing-aria",
+      "title": "Arrow key scrubbing steps through points with live ARIA announcements",
+      "status": "pass",
+      "ms": 291,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/keyboard-scrubbing-aria-scrubbing-active-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "feature-snapping-extrema-roots",
+      "title": "Direct feature jumping snaps accurately to real roots and local peaks",
+      "status": "pass",
+      "ms": 451,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/feature-snapping-extrema-roots-snapped-extrema-mobile.png",
+        "evidence/stage-3-qa/screens/feature-snapping-extrema-roots-snapped-root-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "calculus-structural-report",
+      "title": "Calculus Feature Report displays complete critical points and allows point jumping",
+      "status": "pass",
+      "ms": 445,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/calculus-structural-report-calculus-report-view-mobile.png",
+        "evidence/stage-3-qa/screens/calculus-structural-report-inspected-point-from-report-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "tactile-braille-bana-grid",
+      "title": "BANA Tactile Braille Grid renders, toggles formats, and copies grid",
+      "status": "pass",
+      "ms": 466,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/tactile-braille-bana-grid-tactile-ascii-grid-mobile.png",
+        "evidence/stage-3-qa/screens/tactile-braille-bana-grid-tactile-braille-pins-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "formula-validation-error-recovery",
+      "title": "Syntax error validation warns clearly and allows user recovery without crash",
+      "status": "pass",
+      "ms": 480,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/formula-validation-error-recovery-syntax-error-alert-mobile.png",
+        "evidence/stage-3-qa/screens/formula-validation-error-recovery-recovered-valid-formula-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "science-csv-data-import",
+      "title": "Experimental Science CSV data imports, parses points, and sonifies dataset",
+      "status": "pass",
+      "ms": 406,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/science-csv-data-import-csv-dataset-loaded-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "ear-training-lab-quiz",
+      "title": "Acoustic Ear-Training Lab plays sound, evaluates answer, and tracks score",
+      "status": "pass",
+      "ms": 573,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/ear-training-lab-quiz-quiz-answered-correctly-mobile.png",
+        "evidence/stage-3-qa/screens/ear-training-lab-quiz-quiz-next-question-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "keyboard-shortcuts-modal",
+      "title": "Keyboard Cheatsheet modal opens via ? key and dismisses via Esc",
+      "status": "pass",
+      "ms": 284,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/keyboard-shortcuts-modal-shortcuts-modal-open-mobile.png"
+      ]
+    },
+    {
+      "viewport": "mobile",
+      "id": "mobile-responsiveness-390px",
+      "title": "Mobile layout (390px) scrolls presets horizontally without breaking page grid",
+      "status": "pass",
+      "ms": 282,
+      "error": null,
+      "errors": [],
+      "warnings": [],
+      "screenshots": [
+        "evidence/stage-3-qa/screens/mobile-responsiveness-390px-mobile-ready-mobile.png"
+      ]
+    }
+  ]
+}
