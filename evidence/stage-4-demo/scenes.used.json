@@ -1,0 +1,337 @@
+[
+  {
+    "name": "cover",
+    "card": {
+      "image": "demo/assets/slide1_cover.png"
+    },
+    "duration": 5.5,
+    "vo": "Welcome to SonoPlot STEM, an accessible auditory and tactile graph explorer built for blind and low-vision learners."
+  },
+  {
+    "name": "problem",
+    "card": {
+      "image": "demo/assets/slide2_problem.png"
+    },
+    "duration": 7.5,
+    "vo": "In STEM classrooms, visual curves communicate instant intuition. But for blind students, screen readers only speak silent alt-text, creating an impassable barrier."
+  },
+  {
+    "name": "architecture",
+    "card": {
+      "image": "demo/assets/slide3_arch.png"
+    },
+    "duration": 7.5,
+    "vo": "SonoPlot STEM bridges this divide through a client-side calculus engine that translates formulas and science sensor data into spatial sound sweeps and tactile Braille."
+  },
+  {
+    "name": "live-sweep",
+    "url": "https://accessed-hacks.vercel.app",
+    "session": "app",
+    "actions": [
+      {
+        "type": "waitFor",
+        "sel": "canvas",
+        "__focus": null
+      },
+      {
+        "type": "wait",
+        "ms": 800,
+        "__focus": null
+      },
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Play Audio Sweep\")",
+        "__focus": [
+          499.0859375,
+          1113.9375
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 3800,
+        "__focus": null
+      },
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Step Right\")",
+        "__focus": [
+          1075.2734375,
+          836.9375
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 400,
+        "__focus": null
+      },
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Step Right\")",
+        "__focus": [
+          1075.2734375,
+          836.9375
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 600,
+        "__focus": null
+      }
+    ],
+    "vo": "Clicking Play Audio Sweep launches a continuous frequency sweep. Pitch maps height while sound pans binaurally from left to right ear, followed by step-by-step coordinate scrubbing.",
+    "__focusLog": [
+      {
+        "t": 2.85,
+        "x": 499,
+        "y": 1114
+      },
+      {
+        "t": 7.06,
+        "x": 1075,
+        "y": 837
+      },
+      {
+        "t": 7.86,
+        "x": 1075,
+        "y": 837
+      }
+    ]
+  },
+  {
+    "name": "live-snapping",
+    "session": "app",
+    "actions": [
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Next Extrema\")",
+        "__focus": [
+          560.8359375,
+          894.9375
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 1600,
+        "__focus": null
+      },
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Next Root\")",
+        "__focus": [
+          421.2421875,
+          894.9375
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 1800,
+        "__focus": null
+      }
+    ],
+    "vo": "Dedicated controls snap directly to mathematical peaks and zero roots, accompanied by chime earcons and live ARIA speech.",
+    "__focusLog": [
+      {
+        "t": 9.46,
+        "x": 561,
+        "y": 895
+      },
+      {
+        "t": 11.46,
+        "x": 421,
+        "y": 895
+      }
+    ]
+  },
+  {
+    "name": "live-calculus",
+    "session": "app",
+    "actions": [
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Calculus Feature Report\")",
+        "__focus": [
+          625.640625,
+          88
+        ]
+      },
+      {
+        "type": "waitFor",
+        "sel": "text=Critical Points & Stationary Coordinates",
+        "__focus": null
+      },
+      {
+        "type": "wait",
+        "ms": 2500,
+        "__focus": null
+      }
+    ],
+    "vo": "The Calculus Report delivers an automated architectural breakdown: exact domain and range, real roots, and monotonicity intervals, enabling one-click point inspection.",
+    "__focusLog": [
+      {
+        "t": 14.68,
+        "x": 626,
+        "y": 88
+      }
+    ]
+  },
+  {
+    "name": "live-tactile",
+    "session": "app",
+    "actions": [
+      {
+        "type": "click",
+        "sel": "button:has-text(\"BANA Tactile Braille Grid\")",
+        "__focus": [
+          815.078125,
+          88
+        ]
+      },
+      {
+        "type": "waitFor",
+        "sel": "pre",
+        "__focus": null
+      },
+      {
+        "type": "wait",
+        "ms": 1000,
+        "__focus": null
+      },
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Unicode Braille Pins\")",
+        "__focus": [
+          1240.765625,
+          173
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 1500,
+        "__focus": null
+      },
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Copy Grid\")",
+        "__focus": [
+          1368.234375,
+          173
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 1200,
+        "__focus": null
+      }
+    ],
+    "vo": "For tactile exploration, SonoPlot emits BANA-standard ASCII and Unicode Braille matrices ready for instant printing on swell-touch thermal paper or refreshable Braille pin displays.",
+    "__focusLog": [
+      {
+        "t": 18.6,
+        "x": 815,
+        "y": 88
+      },
+      {
+        "t": 20.02,
+        "x": 1241,
+        "y": 173
+      },
+      {
+        "t": 21.91,
+        "x": 1368,
+        "y": 173
+      }
+    ]
+  },
+  {
+    "name": "live-quiz",
+    "session": "app",
+    "actions": [
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Acoustic Ear-Training Lab\")",
+        "__focus": [
+          1008.0859375,
+          88
+        ]
+      },
+      {
+        "type": "waitFor",
+        "sel": "text=Step 1: Listen to the Secret Curve",
+        "__focus": null
+      },
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Play Mystery Sound\")",
+        "__focus": [
+          1437.3984375,
+          259
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 2000,
+        "__focus": null
+      },
+      {
+        "type": "click",
+        "sel": "[role=\"radio\"]",
+        "__focus": [
+          960,
+          363
+        ]
+      },
+      {
+        "type": "click",
+        "sel": "button:has-text(\"Check Answer\")",
+        "__focus": [
+          1485.828125,
+          551
+        ]
+      },
+      {
+        "type": "wait",
+        "ms": 2200,
+        "__focus": null
+      }
+    ],
+    "vo": "The built-in Ear-Training Lab builds acoustic mental models, training students to identify physical trajectories, decaying harmonic oscillations, and chemical sigmoids by sound alone.",
+    "__focusLog": [
+      {
+        "t": 24.51,
+        "x": 1008,
+        "y": 88
+      },
+      {
+        "t": 24.91,
+        "x": 1437,
+        "y": 259
+      },
+      {
+        "t": 27.31,
+        "x": 960,
+        "y": 363
+      },
+      {
+        "t": 27.73,
+        "x": 1486,
+        "y": 551
+      }
+    ]
+  },
+  {
+    "name": "validation",
+    "card": {
+      "image": "demo/assets/slide4_benchmark.png"
+    },
+    "duration": 8,
+    "vo": "In real-world testing, SonoPlot achieved verified accuracy across Stewart Calculus problems, NIST titration curves, and Vernier laboratory pendulum sensors with sub-millisecond execution latency."
+  },
+  {
+    "name": "conclusion",
+    "card": {
+      "image": "demo/assets/slide5_conclusion.png"
+    },
+    "duration": 8,
+    "vo": "SonoPlot STEM is fully open-source, runs offline in any browser, and is live at accessed-hacks.vercel.app. Learning has no single doorway; let's open more of them together."
+  }
+]

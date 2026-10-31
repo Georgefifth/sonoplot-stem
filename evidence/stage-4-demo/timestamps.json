@@ -1,0 +1,162 @@
+[
+  {
+    "idx": 0,
+    "name": "cover",
+    "file": "/home/yap/Hack/accessed-hacks/evidence/stage-4-demo/raw/scene-00.webm",
+    "wallMs": 6449,
+    "focus": []
+  },
+  {
+    "idx": 1,
+    "name": "problem",
+    "file": "/home/yap/Hack/accessed-hacks/evidence/stage-4-demo/raw/scene-01.webm",
+    "wallMs": 8827,
+    "focus": []
+  },
+  {
+    "idx": 2,
+    "name": "architecture",
+    "file": "/home/yap/Hack/accessed-hacks/evidence/stage-4-demo/raw/scene-02.webm",
+    "wallMs": 8633,
+    "focus": []
+  },
+  {
+    "idx": 3,
+    "name": "live-sweep",
+    "session": "app",
+    "focus": [
+      {
+        "t": 2.93,
+        "x": 499,
+        "y": 1114
+      },
+      {
+        "t": 7.27,
+        "x": 1075,
+        "y": 837
+      },
+      {
+        "t": 8.09,
+        "x": 1075,
+        "y": 837
+      }
+    ],
+    "file": "/home/yap/Hack/accessed-hacks/evidence/stage-4-demo/raw/session-app.webm",
+    "range": [
+      0,
+      9.33
+    ]
+  },
+  {
+    "idx": 4,
+    "name": "live-snapping",
+    "session": "app",
+    "focus": [
+      {
+        "t": 0.41,
+        "x": 561,
+        "y": 895
+      },
+      {
+        "t": 2.47,
+        "x": 421,
+        "y": 895
+      }
+    ],
+    "file": "/home/yap/Hack/accessed-hacks/evidence/stage-4-demo/raw/session-app.webm",
+    "range": [
+      9.33,
+      14.69
+    ]
+  },
+  {
+    "idx": 5,
+    "name": "live-calculus",
+    "session": "app",
+    "focus": [
+      {
+        "t": 0.42,
+        "x": 626,
+        "y": 88
+      }
+    ],
+    "file": "/home/yap/Hack/accessed-hacks/evidence/stage-4-demo/raw/session-app.webm",
+    "range": [
+      14.69,
+      18.72
+    ]
+  },
+  {
+    "idx": 6,
+    "name": "live-tactile",
+    "session": "app",
+    "focus": [
+      {
+        "t": 0.43,
+        "x": 815,
+        "y": 88
+      },
+      {
+        "t": 1.89,
+        "x": 1241,
+        "y": 173
+      },
+      {
+        "t": 3.84,
+        "x": 1368,
+        "y": 173
+      }
+    ],
+    "file": "/home/yap/Hack/accessed-hacks/evidence/stage-4-demo/raw/session-app.webm",
+    "range": [
+      18.72,
+      24.82
+    ]
+  },
+  {
+    "idx": 7,
+    "name": "live-quiz",
+    "session": "app",
+    "focus": [
+      {
+        "t": 0.41,
+        "x": 1008,
+        "y": 88
+      },
+      {
+        "t": 0.83,
+        "x": 1437,
+        "y": 259
+      },
+      {
+        "t": 3.3,
+        "x": 960,
+        "y": 363
+      },
+      {
+        "t": 3.73,
+        "x": 1486,
+        "y": 551
+      }
+    ],
+    "file": "/home/yap/Hack/accessed-hacks/evidence/stage-4-demo/raw/session-app.webm",
+    "range": [
+      24.82,
+      31.84
+    ]
+  },
+  {
+    "idx": 8,
+    "name": "validation",
+    "file": "/home/yap/Hack/accessed-hacks/evidence/stage-4-demo/raw/scene-08.webm",
+    "wallMs": 9294,
+    "focus": []
+  },
+  {
+    "idx": 9,
+    "name": "conclusion",
+    "file": "/home/yap/Hack/accessed-hacks/evidence/stage-4-demo/raw/scene-09.webm",
+    "wallMs": 9363,
+    "focus": []
+  }
+]
